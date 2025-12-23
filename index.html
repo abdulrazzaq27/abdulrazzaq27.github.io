@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Razzaq — Full-Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Abdul Razzaq — Full-Stack Web Developer building production-ready MERN web apps.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    
+    <!-- FontAwesome & DevIcon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Abdul<span>Razzaq</span></a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-content">
+                        <div class="hero-greeting">👋 Hello!</div>
+                        <h1>I’m <span>Abdul Razzaq</span>, Developing Production-Ready Web Systems</h1>
+                        <p class="hero-subtitle">I build scalable MERN web applications that automate business
+                            operations and dashboards.</p>
+
+                        <p class="hero-trust"
+                            style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)"
+                                stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            Built real-world Gym & Restaurant Management Systems with authentication, analytics, and
+                            role-based access.
+                        </p>
+
+                        <div class="hero-btns">
+                            <a href="#projects" class="btn btn-primary">View Live Projects</a>
+                            <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                            <!-- <a href="RESUME_URL" class="btn btn-secondary" style="border: none; background: transparent; padding: 0.8rem 1rem;">Download CV</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Abstract Background Visuals -->
+            <div class="hero-visual">
+                <div class="circle-glow"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" style="padding: 100px 0;">
+            <div class="container">
+                <div class="section-title">About Me</div>
+                <div class="glass-card">
+                    <div class="grid" style="grid-template-columns: 2fr 1fr; align-items: center; gap: 3rem;">
+                        <div class="about-text">
+                            <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">I design digital products that make a
+                                difference.</h3>
+                            <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                                I’m Abdul Razzaq, a Full-Stack Developer (MERN) passionate about building fast,
+                                scalable, and user-centric applications. I specialize in crafting clean interfaces,
+                                robust backend systems, and real-time features using modern web technologies.
+                            </p>
+                            <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                                I’ve worked on projects like a Restaurant Management System, Gym Management System, and
+                                various full-stack builds focused on performance and usability. I’m currently sharpening
+                                my DSA and system design skills as I prepare for top-tier engineering roles.
+                            </p>
+
+                            <div class="flex">
+                                <div>
+                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">10+</div>
+                                    <div style="font-size: 0.9rem; color: var(--text-muted);">Projects Completed</div>
+                                </div>
+                                <!-- <div>
+                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">02+</div>
+                                    <div style="font-size: 0.9rem; color: var(--text-muted);">Years Experience</div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="about-image" style="position: relative;">
+                            <!-- Placeholder for Image -->
+                            <div
+                                style="width: 100%; padding-bottom: 100%; background: rgba(255,255,255,0.05); border-radius: 20px; border: 1px solid var(--border-card);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" style="padding: 50px 0 100px;">
+            <div class="container">
+                <div class="section-title">Technical Skills</div>
+
+                <div class="skills-wrapper">
+                    
+                    <!-- Frontend -->
+                    <div class="skills-category">
+                        <h3>Frontend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5 text-html tech-icon"></i>
+                                </div>
+                                <span class="skill-name">HTML5</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt tech-icon text-css"></i>
+                                </div>
+                                <span class="skill-name">CSS3</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js tech-icon text-js"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="devicon-react-original tech-icon text-react"></i>
+                                </div>
+                                <span class="skill-name">React</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-bootstrap tech-icon text-bootstrap"></i>
+                                </div>
+                                <span class="skill-name">Bootstrap</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="devicon-tailwindcss-original tech-icon text-tailwind"></i>
+                                </div>
+                                <span class="skill-name">Tailwind</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="devicon-redux-original tech-icon text-redux"></i>
+                                </div>
+                                <span class="skill-name">Redux</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-mobile-screen tech-icon"></i>
+                                </div>
+                                <span class="skill-name">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skills-category">
+                        <h3>Backend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node tech-icon text-node"></i>
+                                </div>
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="devicon-express-original tech-icon text-express"></i>
+                                </div>
+                                <span class="skill-name">Express</span>
+                            </div>
+                             <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="devicon-mongodb-plain tech-icon text-mongo"></i>
+                                </div>
+                                <span class="skill-name">MongoDB</span>
+                            </div>
+                             <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-globe tech-icon"></i>
+                                </div>
+                                <span class="skill-name">REST API</span>
+                            </div>
+                             <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-shield-halved tech-icon text-jwt"></i>
+                                </div>
+                                <span class="skill-name">JWT Auth</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skills-category">
+                        <h3>Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-git-alt tech-icon text-git"></i>
+                                </div>
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-github tech-icon text-github"></i>
+                                </div>
+                                <span class="skill-name">GitHub</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-npm tech-icon text-npm"></i>
+                                </div>
+                                <span class="skill-name">npm</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-terminal tech-icon text-terminal"></i>
+                                </div>
+                                <span class="skill-name">Terminal</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="devicon-vscode-plain tech-icon text-vscode"></i>
+                                </div>
+                                <span class="skill-name">VS Code</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="devicon-postman-plain tech-icon text-postman"></i>
+                                </div>
+                                <span class="skill-name">Postman</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="devicon-vercel-original tech-icon text-vercel"></i>
+                                </div>
+                                <span class="skill-name">Vercel</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="devicon-railway-original tech-icon text-railway"></i>
+                                </div>
+                                <span class="skill-name">Railway</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" style="padding: 50px 0;">
+            <div class="container">
+                <div class="section-title">Featured Projects</div>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+
+                    <!-- Project 1: Gym Management -->
+                    <div class="glass-card project-card">
+                        <div class="project-image">
+                            <!-- Placeholder -->
+                            <div
+                                style="width: 100%; height: 100%; background: linear-gradient(45deg, #0f2027, #203a43);">
+                            </div>
+                        </div>
+                        <h3>Gym Management System (MERN)</h3>
+                        <p style="color: white; margin-top: 0.5rem; font-size: 0.95rem; font-weight: 500;">
+                            Automated member management, payments tracking, and admin analytics for gyms.
+                        </p>
+
+                        <ul class="project-features">
+                            <li>Role-based admin & staff access</li>
+                            <li>Real-time dashboard & reports</li>
+                            <li>Secure authentication & APIs</li>
+                            <li>Deployed with production config</li>
+                            <li>Structured a scalable codebase reducing future feature development time by 30%+.</li>
+                        </ul>
+
+                        <div class="project-links">
+                            <a href="https://gym-gamma-dusky.vercel.app/" target="_blank" style="color: var(--accent); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/abdulrazzaq27/gym" target="_blank"
+                                style="color: white; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Restaurant Management -->
+                    <div class="glass-card project-card">
+                        <div class="project-image">
+                            <!-- Placeholder -->
+                            <div
+                                style="width: 100%; height: 100%; background: linear-gradient(45deg, #1a1a1a, #2a2a2a);">
+                            </div>
+                        </div>
+                        <h3>Restaurant Management System (MERN)</h3>
+                        <p style="color: white; margin-top: 0.5rem; font-size: 0.95rem; font-weight: 500;">
+                            Full-stack real-time order tracking and staff coordination platform.
+                        </p>
+
+                        <ul class="project-features">
+                            <li>Role-based access control (RBAC)</li>
+                            <li>Real-time updates via Socket.io</li>
+                            <li>Secure JWT Authentication</li>
+                            <li>Analytics & Admin Dashboard</li>
+                            <li>Optimized MongoDB queries, improving data fetch performance by 40%+.</li>
+                        </ul>
+
+                        <div class="project-links">
+                            <a href="#"
+                                style="color: var(--accent); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/abdulrazzaq27/restaurant-management-system" target="_blank"
+                                style="color: white; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" style="padding: 50px 0;">
+            <div class="container">
+                <div class="glass-card">
+                    <h2 class="section-title">Education</h2>
+                    <div style="max-width: 800px;">
+
+                        <div class="timeline-item">
+                            <h4 style="font-size: 1.2rem;">Muffakham Jah College of Engineering & Technology</h4>
+                            <p style="color: var(--accent);">B.Tech in Computer Science Engineering</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">2023 - 2027 |
+                                CGPA: 8.38</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h4 style="font-size: 1.2rem;">MS Junior College</h4>
+                            <p style="color: white;">MPC</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">2021 - 2023 |
+                                Grade: 90%</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h4 style="font-size: 1.2rem;">Vikas High School</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">2011 - 2021 |
+                                GPA: 10.0</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="padding: 100px 0;">
+            <div class="container" style="text-align: center;">
+                <h2 style="font-size: 3rem; margin-bottom: 1rem;">Let's Work Together</h2>
+                <div style="max-width: 600px; margin: 0 auto 3rem; text-align: left; background: rgba(255,255,255,0.03); padding: 2rem; border-radius: 16px; border: 1px solid var(--border-card);">
+                    <p style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">
+                        I help startups and small businesses build reliable web applications, dashboards, and admin
+                        systems. If you’re looking for a developer who can take ownership and deliver production-ready
+                        solutions, let’s talk.
+                    </p>
+                    <h4 style="color: var(--accent); margin-bottom: 1rem;">What I Can Help You With:</h4>
+                    <ul style="color: var(--text-muted); list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: var(--accent);">▹</span> Admin dashboards & internal tools
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: var(--accent);">▹</span> Business automation systems
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: var(--accent);">▹</span> Secure REST APIs & backend architecture
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-grid" style="max-width: 800px; margin: 0 auto;">
+                    <a href="mailto:EMAIL" class="contact-item">
+                        <div style="background: rgba(255,255,255,0.1); padding: 0.8rem; border-radius: 50%;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div style="text-align: left;">
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">Email</div>
+                            <div style="font-weight: 600;">Get in Touch</div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/abdulrazzaq27" target="_blank" class="contact-item">
+                        <div style="background: #0077b5; padding: 0.8rem; border-radius: 50%; color: white;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </div>
+                        <div style="text-align: left;">
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">LinkedIn</div>
+                            <div style="font-weight: 600;">Connect</div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.github.com/abdulrazzaq27" target="_blank" class="contact-item">
+                        <div style="background: #333; padding: 0.8rem; border-radius: 50%; color: white;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </div>
+                        <div style="text-align: left;">
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">GitHub</div>
+                            <div style="font-weight: 600;">Follow</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Abdul Razzaq. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            // Use class-based toggling for cleaner styles
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (mobileBtn && navLinks) {
+                mobileBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('mobile-active');
+
+                    // Toggle aria-expanded for accessibility
+                    const isExpanded = navLinks.classList.contains('mobile-active');
+                    mobileBtn.setAttribute('aria-expanded', isExpanded);
+                });
+
+                // Close menu when clicking a link
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('mobile-active');
+                        mobileBtn.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // Scroll Spy / Active Link Highlighting
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('.nav-links a');
+
+            const onScroll = () => {
+                const scrollPos = window.scrollY + 100; // Offset for navbar height
+
+                sections.forEach(section => {
+                    const top = section.offsetTop;
+                    const height = section.offsetHeight;
+                    const id = section.getAttribute('id');
+
+                    if (scrollPos >= top && scrollPos < top + height) {
+                        navItems.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', onScroll);
+            // Initial check
+            onScroll();
+        </script>
+</body>
+
+</html>
