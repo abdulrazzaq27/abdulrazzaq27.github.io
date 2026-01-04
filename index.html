@@ -25,6 +25,11 @@
 
 <body>
 
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" aria-label="Toggle Light Mode">
+        <i class="fas fa-lightbulb"></i>
+    </button>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
@@ -96,14 +101,14 @@
                             <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">I design digital products that make a
                                 difference.</h3>
                             <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                                I’m Abdul Razzaq, a Full-Stack Developer (MERN) passionate about building fast,
+                                I’m a Full-Stack Developer (MERN) about building fast,
                                 scalable, and user-centric applications. I specialize in crafting clean interfaces,
                                 robust backend systems, and real-time features using modern web technologies.
                             </p>
                             <p style="color: var(--text-muted); margin-bottom: 2rem;">
                                 I’ve worked on projects like a Restaurant Management System, Gym Management System, and
                                 various full-stack builds focused on performance and usability. I’m currently sharpening
-                                my DSA and system design skills as I prepare for top-tier engineering roles.
+                                my DSA and system design skills as I prepare for engineering roles.
                             </p>
 
                             <div class="flex">
@@ -111,10 +116,6 @@
                                     <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">10+</div>
                                     <div style="font-size: 0.9rem; color: var(--text-muted);">Projects Completed</div>
                                 </div>
-                                <!-- <div>
-                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">02+</div>
-                                    <div style="font-size: 0.9rem; color: var(--text-muted);">Years Experience</div>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -534,6 +535,31 @@
             window.addEventListener('scroll', onScroll);
             // Initial check
             onScroll();
+
+            // Theme Toggle Logic
+            const themeToggle = document.getElementById('theme-toggle');
+            const htmlElement = document.documentElement;
+            // const icon = themeToggle.querySelector('i'); // Icon stays constant
+
+            // Check for saved user preference
+            const savedTheme = localStorage.getItem('theme');
+            // DEFAULT TO LIGHT MODE: Only switch to dark if explicitly saved as 'dark'
+            if (savedTheme === 'dark') {
+                htmlElement.removeAttribute('data-theme');
+            } else {
+                htmlElement.setAttribute('data-theme', 'light');
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = htmlElement.getAttribute('data-theme');
+                if (currentTheme === 'light') {
+                    htmlElement.removeAttribute('data-theme');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    htmlElement.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
+                }
+            });
         </script>
 </body>
 

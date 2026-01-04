@@ -21,6 +21,106 @@
     --transition-fast: 0.2s ease;
 }
 
+[data-theme="light"] {
+    --bg-dark: #f0f2f5;
+    --bg-card: rgba(255, 255, 255, 0.6);
+    --border-card: rgba(0, 0, 0, 0.1);
+    --text-main: #1a1a1a;
+    --text-muted: #555555;
+    --accent-glow: rgba(255, 107, 0, 0.15);
+}
+
+[data-theme="light"] .glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+[data-theme="light"] .navbar {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);
+}
+
+[data-theme="light"] .logo, 
+[data-theme="light"] .logo span {
+    color: #1a1a1a;
+}
+
+[data-theme="light"] .nav-links a:hover {
+    color: var(--accent);
+    background: rgba(0,0,0,0.05);
+}
+
+[data-theme="light"] .hero-greeting {
+    background: rgba(255, 107, 0, 0.1);
+    border-color: rgba(255, 107, 0, 0.2);
+}
+
+[data-theme="light"] .project-image {
+   border-color: rgba(0,0,0,0.1); 
+}
+
+[data-theme="light"] .skill-icon {
+    background: white;
+    border-color: rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+[data-theme="light"] .contact-item {
+    background: white;
+    border-color: rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+[data-theme="light"] .contact-item:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* Logo Color Fixes for Light Mode */
+[data-theme="light"] .text-express,
+[data-theme="light"] .text-github,
+[data-theme="light"] .text-vercel,
+[data-theme="light"] .text-railway {
+    color: #1a1a1a;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 5%; /* Aligns vaguely with navbar right edge on desktop */
+    z-index: 1001; /* Above navbar */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    backdrop-filter: blur(12px);
+    color: var(--accent);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#theme-toggle:hover {
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 0 20px var(--accent-glow);
+    background: var(--accent); /* Optional: fill with color on hover? Or stick to subtle */
+    color: white;
+}
+
+[data-theme="light"] #theme-toggle {
+    background: white;
+    color: var(--accent);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 /* Reset & Base */
 * {
     margin: 0;
