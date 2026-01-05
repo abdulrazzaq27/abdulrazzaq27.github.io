@@ -275,6 +275,18 @@ h1, h2, h3, h4, h5, h6 {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Light Mode Button Fixes */
+[data-theme="light"] .btn-secondary {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-main);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: var(--accent);
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -565,6 +577,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+.project-desc {
+    color: white; /* Default (Dark Mode) */
+}
+
+[data-theme="light"] .project-desc {
+    color: var(--text-muted); /* Dark in Light Mode */
+    /* or color: #1a1a1a; if you want it darker */
+}
+
 .project-features li {
     position: relative;
     padding-left: 1.5rem;
@@ -586,6 +607,19 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
     padding-top: 1.5rem;
     border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.source-code-link {
+    color: white; /* Default (Dark Mode) */
+    transition: color var(--transition-fast);
+}
+
+[data-theme="light"] .source-code-link {
+    color: var(--text-muted); /* Or var(--text-main) depending on preference */
+}
+
+[data-theme="light"] .source-code-link:hover {
+    color: var(--accent);
 }
 
 /* Education Section */
