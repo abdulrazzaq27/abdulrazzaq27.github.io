@@ -4,565 +4,437 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdul Razzaq — Full-Stack Developer</title>
+    <title>Abdul Razzaq - Software Engineer | AI Engineer</title>
     <meta name="description"
-        content="Portfolio of Abdul Razzaq — Full-Stack Web Developer building production-ready MERN web apps.">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&display=swap"
-        rel="stylesheet">
-    
-    <!-- FontAwesome & DevIcon -->
+        content="Portfolio of Abdul Razzaq Software Engineer and AI Engineer building production-ready MERN web apps, RAG pipelines, and AI-integrated systems.">
+    <!-- SF Pro loaded via system font stack in CSS — no external font needed -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Theme Toggle -->
-    <button id="theme-toggle" aria-label="Toggle Light Mode">
-        <i class="fas fa-lightbulb"></i>
-    </button>
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">Abdul<span>Razzaq</span></a>
-            <div class="nav-links">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Abdul<span>Razzaq</span></a>
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </button>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
     <main>
-        <!-- Hero Section -->
+
+        <!-- HERO -->
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-flex">
                     <div class="hero-content">
-                        <div class="hero-greeting">👋 Hello!</div>
-                        <h1>I’m <span>Abdul Razzaq</span>, Developing Production-Ready Web Systems</h1>
-                        <p class="hero-subtitle">I build scalable MERN web applications that automate business
-                            operations and dashboards.</p>
+                        <!-- <div class="hero-badge">
+                            <span class="badge-dot"></span>
+                            Available for opportunities
+                        </div> -->
+                        <h1>I'm <span class="gradient-text">Abdul Razzaq</span>,<br>Software Engineer <span class="title-sep">|</span> AI Engineer</h1>
+                        <p class="hero-subtitle">CS undergraduate building production-ready MERN systems from real-time dashboards and REST APIs to AI-integrated pipelines and bot automations.</p>
 
-                        <p class="hero-trust"
-                            style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)"
-                                stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                <polyline points="22 4 12 14.01 9 11.01" />
-                            </svg>
-                            Built real-world Gym & Restaurant Management Systems with authentication, analytics, and
-                            role-based access.
-                        </p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Production Projects</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">REST APIs Built</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number">8.1</div>
+                                <div class="stat-label">CGPA (CS, 2027)</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <a href="https://leetcode.com/u/abdulrazzaq27/" target="_blank" rel="noopener noreferrer" class="stat-item stat-item-link" title="View LeetCode Profile (150+ Problems Solved)">
+                                <div class="stat-number stat-leetcode">150+</div>
+                                <div class="stat-label">LeetCode Solved &nearr;</div>
+                            </a>
+                        </div>
 
                         <div class="hero-btns">
-                            <a href="#projects" class="btn btn-primary">View Live Projects</a>
-                            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                            <!-- <a href="RESUME_URL" class="btn btn-secondary" style="border: none; background: transparent; padding: 0.8rem 1rem;">Download CV</a> -->
+                            <a href="#projects" class="btn btn-primary"><i class="fas fa-layer-group"></i> View Projects</a>
+                            <div class="hero-social-links">
+                                <a href="https://www.linkedin.com/in/abdulrazzaq27" target="_blank" rel="noopener noreferrer" class="hero-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/abdulrazzaq27" target="_blank" rel="noopener noreferrer" class="hero-icon-btn" aria-label="GitHub" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="mailto:arrazzaq7860@gmail.com" class="hero-icon-btn" aria-label="Gmail" title="Gmail: arrazzaq7860@gmail.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="https://leetcode.com/u/abdulrazzaq27/" target="_blank" rel="noopener noreferrer" class="hero-icon-btn hero-leetcode-btn" aria-label="LeetCode Profile (150+ Solved)" title="LeetCode (150+ Problems Solved)">
+                                    <svg class="leetcode-icon" width="20" height="20" viewBox="0 0 24 24" fill="#FFA116"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="hero-image-container">
-                        <img src="Abdul.png" alt="Abdul Razzaq" class="hero-profile-img">
+
+                    <div class="hero-image-wrap">
+                        <div class="hero-image-ring">
+                            <img src="./Abdul.png" alt="Abdul Razzaq" class="hero-profile-img">
+                        </div>
+                        <div class="hero-img-glow"></div>
                     </div>
                 </div>
             </div>
-
-            <!-- Abstract Background Visuals -->
-            <div class="hero-visual">
-                <div class="circle-glow"></div>
-            </div>
+            <div class="hero-grid"></div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" style="padding: 100px 0;">
+        <!-- ABOUT -->
+        <section id="about" class="section">
             <div class="container">
-                <div class="section-title">About Me</div>
-                <div class="glass-card">
-                    <div class="about-content">
-                        <div class="about-text">
-                            <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">I design digital products that make a
-                                difference.</h3>
-                            <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                                I’m a Full-Stack Developer (MERN) about building fast,
-                                scalable, and user-centric applications. I specialize in crafting clean interfaces,
-                                robust backend systems, and real-time features using modern web technologies.
-                            </p>
-                            <p style="color: var(--text-muted); margin-bottom: 2rem;">
-                                I’ve worked on projects like a Restaurant Management System, Gym Management System, and
-                                various full-stack builds focused on performance and usability. I’m currently sharpening
-                                my DSA and system design skills as I prepare for engineering roles.
-                            </p>
-
-                            <div class="flex">
-                                <div>
-                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">10+</div>
-                                    <div style="font-size: 0.9rem; color: var(--text-muted);">Projects Completed</div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="section-header">
+                    <div class="section-tag">About Me</div>
+                    <h2 class="section-title">Crafting reliable systems, <span class="gradient-text">one layer at a time</span></h2>
+                </div>
+                <div class="about-grid about-grid-2">
+                    <div class="about-card glass-panel">
+                        <div class="about-icon-wrap"><i class="fas fa-bolt"></i></div>
+                        <h3>Production Focus</h3>
+                        <p>Built and deployed production systems featuring RAG pipelines, real-time WebSockets, and bot-based integrations. I take ownership from architecture to CI/CD deployment on AWS, Vercel, and Railway.</p>
+                    </div>
+                    <div class="about-card glass-panel">
+                        <div class="about-icon-wrap"><i class="fas fa-brain"></i></div>
+                        <h3>AI &amp; Integrations</h3>
+                        <p>Integrated Telegram &amp; WhatsApp bots with AI-assisted document extraction, OCR.Space, pgvector semantic search, and RAG planners &mdash; bridging backend infrastructure with intelligent automation.</p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Skills Section -->
-        <section id="skills" style="padding: 50px 0 100px;">
-            <div class="container">
-                <div class="section-title">Technical Skills</div>
-
-                <div class="skills-wrapper">
-                    
-                    <!-- Frontend -->
-                    <div class="skills-category">
-                        <h3>Frontend</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fab fa-html5 text-html tech-icon"></i>
-                                </div>
-                                <span class="skill-name">HTML5</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fab fa-css3-alt tech-icon text-css"></i>
-                                </div>
-                                <span class="skill-name">CSS3</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fab fa-js tech-icon text-js"></i>
-                                </div>
-                                <span class="skill-name">JavaScript</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="devicon-react-original tech-icon text-react"></i>
-                                </div>
-                                <span class="skill-name">React</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fab fa-bootstrap tech-icon text-bootstrap"></i>
-                                </div>
-                                <span class="skill-name">Bootstrap</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="devicon-tailwindcss-original tech-icon text-tailwind"></i>
-                                </div>
-                                <span class="skill-name">Tailwind</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="devicon-redux-original tech-icon text-redux"></i>
-                                </div>
-                                <span class="skill-name">Redux</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fas fa-mobile-screen tech-icon"></i>
-                                </div>
-                                <span class="skill-name">Responsive</span>
-                            </div>
-                        </div>
+                <!-- LeetCode 150+ Problems Highlight -->
+                <div class="about-leetcode-highlight glass-panel">
+                    <div class="about-leetcode-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFA116"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
                     </div>
-
-                    <!-- Backend -->
-                    <div class="skills-category">
-                        <h3>Backend</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fab fa-node tech-icon text-node"></i>
-                                </div>
-                                <span class="skill-name">Node.js</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="devicon-express-original tech-icon text-express"></i>
-                                </div>
-                                <span class="skill-name">Express</span>
-                            </div>
-                             <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="devicon-mongodb-plain tech-icon text-mongo"></i>
-                                </div>
-                                <span class="skill-name">MongoDB</span>
-                            </div>
-                             <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fas fa-globe tech-icon"></i>
-                                </div>
-                                <span class="skill-name">REST API</span>
-                            </div>
-                             <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fas fa-shield-halved tech-icon text-jwt"></i>
-                                </div>
-                                <span class="skill-name">JWT Auth</span>
-                            </div>
-                        </div>
+                    <div class="about-leetcode-content">
+                        <h4>Data Structures &amp; Problem Solving</h4>
+                        <p>Solved <strong>more than 150 problems on LeetCode</strong>, continually sharpening algorithmic intuition, time/space optimization, and scalable coding practices.</p>
                     </div>
-
-                    <!-- Tools -->
-                    <div class="skills-category">
-                        <h3>Tools</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fab fa-git-alt tech-icon text-git"></i>
-                                </div>
-                                <span class="skill-name">Git</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fab fa-github tech-icon text-github"></i>
-                                </div>
-                                <span class="skill-name">GitHub</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fab fa-npm tech-icon text-npm"></i>
-                                </div>
-                                <span class="skill-name">npm</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="fas fa-terminal tech-icon text-terminal"></i>
-                                </div>
-                                <span class="skill-name">Terminal</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="devicon-vscode-plain tech-icon text-vscode"></i>
-                                </div>
-                                <span class="skill-name">VS Code</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="devicon-postman-plain tech-icon text-postman"></i>
-                                </div>
-                                <span class="skill-name">Postman</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="devicon-vercel-original tech-icon text-vercel"></i>
-                                </div>
-                                <span class="skill-name">Vercel</span>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon">
-                                    <i class="devicon-railway-original tech-icon text-railway"></i>
-                                </div>
-                                <span class="skill-name">Railway</span>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="https://leetcode.com/u/abdulrazzaq27/" target="_blank" rel="noopener noreferrer" class="about-leetcode-btn">
+                        View LeetCode <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" style="padding: 50px 0;">
+        <!-- SKILLS -->
+        <section id="skills" class="section">
             <div class="container">
-                <div class="section-title">Featured Projects</div>
-                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                <div class="section-header">
+                    <div class="section-tag">Technical Skills</div>
+                    <h2 class="section-title">My <span class="gradient-text">Tech Arsenal</span></h2>
+                </div>
+                <div class="skills-layout">
 
-                    <!-- Project 1: Gym Management -->
-                    <div class="glass-card project-card">
-                        <div class="project-image">
-                            <div
-                            style="width: 100%; height: 100%; background: linear-gradient(45deg, #0f2027, #203a43);">
-                            <img src="gym-image.png" alt="gym-image">
-                            </div>
+                    <div class="skill-group">
+                        <div class="skill-group-label"><i class="fas fa-laptop-code"></i> Languages</div>
+                        <div class="skill-pills">
+                            <span class="skill-pill"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="skill-pill"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                            <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+                            <span class="skill-pill"><i class="fas fa-database"></i> SQL</span>
+                            <span class="skill-pill">C++</span>
                         </div>
-                        <h3>Gym Management System (MERN)</h3>
-                        <p class="project-desc" style="margin-top: 0.5rem; font-size: 0.95rem; font-weight: 500;">
-                            Automated member management, payments tracking, and admin analytics for gyms.
-                        </p>
+                    </div>
 
-                        <ul class="project-features">
-                            <li>Role-based admin & staff access</li>
-                            <li>Real-time dashboard & reports</li>
-                            <li>Secure authentication & APIs</li>
-                            <li>Deployed with production config</li>
-                            <li>Structured a scalable codebase reducing future feature development time by 30%+.</li>
-                        </ul>
+                    <div class="skill-group">
+                        <div class="skill-group-label"><i class="fas fa-layer-group"></i> Frontend</div>
+                        <div class="skills-icon-grid">
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-html5" style="color:#e34c26"></i></div><span>HTML5</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-css3-alt" style="color:#264de4"></i></div><span>CSS3</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="devicon-react-original" style="color:#61dafb"></i></div><span>React</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="devicon-redux-original" style="color:#764abc"></i></div><span>Redux</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="devicon-tailwindcss-original" style="color:#38bdf8"></i></div><span>Tailwind</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-mobile-screen" style="color:#c8a96e"></i></div><span>Responsive</span></div>
+                        </div>
+                    </div>
 
-                        <div class="project-links">
-                            <a href="https://gym-gamma-dusky.vercel.app/" target="_blank" style="color: var(--accent); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                    <polyline points="15 3 21 3 21 9" />
-                                    <line x1="10" y1="14" x2="21" y2="3" />
-                                </svg>
-                                Live Demo
+                    <div class="skill-group">
+                        <div class="skill-group-label"><i class="fas fa-server"></i> Backend</div>
+                        <div class="skills-icon-grid">
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-node" style="color:#339933"></i></div><span>Node.js</span></div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" style="color: var(--text-primary);"><path d="M24 10.638v2.724h-3.902c-.067 1.83-1.026 2.876-2.738 2.876-1.745 0-2.887-1.12-2.887-2.876 0-1.755 1.142-2.876 2.887-2.876 1.637 0 2.617.962 2.724 2.646h-3.837c.071-.856.495-1.347 1.113-1.347.643 0 1.056.46 1.056 1.157v.415H24zm-6.64 1.347c0-.687-.432-1.157-1.056-1.157-.618 0-1.042.491-1.113 1.347h2.169v-.19zm-5.748 4.253l-2.073-3.692-2.074 3.692H5.06l3.284-5.327L5.3 5.76h2.405l1.91 3.493 1.91-3.493h2.406L10.65 11.09l3.284 5.148h-2.322zM0 12.01c0-3.32 2.378-5.99 5.8-5.99 3.42 0 5.8 2.67 5.8 5.99 0 3.32-2.38 5.99-5.8 5.99C2.378 18 0 15.33 0 12.01zm9.35 0c0-2.22-1.5-3.97-3.55-3.97S2.25 9.79 2.25 12.01s1.5 3.97 3.55 3.97 3.55-1.75 3.55-3.97z"/></svg>
+                                </div>
+                                <span>Express</span>
+                            </div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-globe" style="color:#c8a96e"></i></div><span>REST API</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-shield-halved" style="color:#D63AFF"></i></div><span>JWT Auth</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-plug" style="color:#c8a96e"></i></div><span>Socket.IO</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-sitemap" style="color:#c8a96e"></i></div><span>MVC</span></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label"><i class="fas fa-database"></i> Databases</div>
+                        <div class="skills-icon-grid">
+                            <div class="skill-card"><div class="skill-icon"><i class="devicon-mongodb-plain" style="color:#47A248"></i></div><span>MongoDB</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="devicon-mysql-plain" style="color:#4479A1"></i></div><span>MySQL</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="devicon-postgresql-plain" style="color:#336791"></i></div><span>PostgreSQL</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-vector-square" style="color:#c8a96e"></i></div><span>pgvector</span></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label"><i class="fas fa-tools"></i> Tools &amp; Deploy</div>
+                        <div class="skills-icon-grid">
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-git-alt" style="color:#f05032"></i></div><span>Git</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-github" style="color: var(--text-primary);"></i></div><span>GitHub</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="devicon-docker-plain" style="color:#2496ed"></i></div><span>Docker</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-aws" style="color:#ff9900"></i></div><span>AWS</span></div>
+                            <div class="skill-card"><div class="skill-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="color: var(--text-primary);"><path d="M24 22.525H0l12-21.05 12 21.05z"/></svg></div><span>Vercel</span></div>
+                            <a href="https://leetcode.com/u/abdulrazzaq27/" target="_blank" rel="noopener noreferrer" class="skill-card skill-card-link" title="LeetCode Profile">
+                                <div class="skill-icon">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="#FFA116"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.818 3.535 5.922 5.922 0 0 0 3.327-.552 6.002 6.002 0 0 0 2.215-2.029l3.528-4.498a1.385 1.385 0 0 0-.25-1.947 1.385 1.385 0 0 0-1.947.25l-3.528 4.498a3.226 3.226 0 0 1-1.19 1.09 3.184 3.184 0 0 1-1.789.297 3.2 3.2 0 0 1-2.59-1.904 3.16 3.16 0 0 1-.188-.547 2.978 2.978 0 0 1-.033-1.27 2.87 2.87 0 0 1 .65-1.132l3.854-4.126 4.444-4.825a1.385 1.385 0 0 0-.961-2.338zm3.016 9.421a1.385 1.385 0 0 0-1.385 1.385v5.54a1.385 1.385 0 1 0 2.77 0v-5.54a1.385 1.385 0 0 0-1.385-1.385z"/></svg>
+                                </div>
+                                <span>LeetCode</span>
                             </a>
-                            <a href="https://github.com/abdulrazzaq27/gym" target="_blank"
-                                class="source-code-link"
-                                style="font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                                </svg>
-                                Source Code
-                            </a>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label"><i class="fas fa-robot"></i> AI &amp; Integrations</div>
+                        <div class="skill-pills">
+                            <span class="skill-pill"><i class="fas fa-brain"></i> OCR.Space</span>
+                            <span class="skill-pill"><i class="fab fa-telegram"></i> Telegram Bot API</span>
+                            <span class="skill-pill"><i class="fas fa-chart-line"></i> scikit-learn</span>
+                            <span class="skill-pill"><i class="fas fa-magnifying-glass"></i> RAG / pgvector</span>
+                            <span class="skill-pill"><i class="fab fa-whatsapp"></i> WhatsApp API</span>
+                            <span class="skill-pill"><i class="devicon-postman-plain" style="color:#FF6C37"></i> Postman</span>
+                            <a href="https://leetcode.com/u/abdulrazzaq27/" target="_blank" rel="noopener noreferrer" class="skill-pill"><i class="fas fa-code" style="color:#FFA116;"></i> LeetCode &nearr;</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Featured Work</div>
+                    <h2 class="section-title">Projects built for <span class="gradient-text">the real world</span></h2>
+                </div>
+                <div class="projects-grid projects-grid-3">
+
+                    <!-- Project 1: SPARK -->
+                    <div class="project-card featured-card glass-panel">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <div class="project-meta">
+                                    <span class="project-tag featured-tag">&#11088; Featured</span>
+                                    <span class="project-tag">AI / Full-Stack</span>
+                                </div>
+                                <div class="project-links-row">
+                                    <a href="https://github.com/abdulrazzaq27" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">SPARK AI Finance Tracker</h3>
+                            <p class="project-desc">Startup-focused expense management platform that replaces spreadsheet workflows with an automated pipeline using Telegram &amp; WhatsApp webhooks and RAG-powered natural language queries.</p>
+                            <ul class="project-bullets">
+                                <li>Built Telegram &amp; WhatsApp bot webhooks for document/receipt ingestion with AI-assisted extraction and SHA-256 deduplication</li>
+                                <li>Implemented semantic search with pgvector (384-dim embeddings) and a RAG planner for natural language financial queries</li>
+                                <li>Developed founder-facing dashboards with burn rate tracking, runway projections, and budget threshold spike detection</li>
+                                <li>Multi-container Docker architecture deployed to AWS Elastic Beanstalk with CI/CD via GitHub Actions</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-badge">React</span><span class="tech-badge">Node.js</span><span class="tech-badge">PostgreSQL</span><span class="tech-badge">Docker</span><span class="tech-badge">AWS</span><span class="tech-badge">pgvector</span><span class="tech-badge">RAG</span><span class="tech-badge">CI/CD</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Project 2: Restaurant Management -->
-                    <div class="glass-card project-card">
-                        <div class="project-image">
-                            <!-- Placeholder -->
-                            <div
-                                style="width: 100%; height: 100%; background: linear-gradient(45deg, #1a1a1a, #2a2a2a);">
-                                <img src="restaurant-image.png" alt="restaurant-image">
+                    <div class="project-card glass-panel">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <div class="project-meta">
+                                    <span class="project-tag">Real-Time</span>
+                                    <span class="project-tag">Full-Stack</span>
+                                </div>
+                                <div class="project-links-row">
+                                    <a href="https://github.com/abdulrazzaq27/restaurant-management-system" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Restaurant Management System</h3>
+                            <p class="project-desc">Full-stack platform handling 50+ daily orders with real-time Socket.IO updates across kitchen, waiter, and admin roles. Reduced order processing time by 40%.</p>
+                            <ul class="project-bullets">
+                                <li>JWT-based auth &amp; role-based access control (RBAC) for 5 distinct operational roles (admin, manager, waiter, kitchen, cashier)</li>
+                                <li>Event-driven Socket.IO communication for real-time kitchen order dispatch and instant status synchronization</li>
+                                <li>Built 15+ RESTful APIs with MVC architecture, input validation, and middleware chaining achieving ~95% uptime</li>
+                                <li>Analytics dashboard tracking 50K+ monthly revenue using Chart.js with a fully responsive layout</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-badge">MERN</span><span class="tech-badge">Socket.IO</span><span class="tech-badge">JWT</span><span class="tech-badge">Chart.js</span><span class="tech-badge">MVC</span>
                             </div>
                         </div>
-                        <h3>Restaurant Management System (MERN)</h3>
-                        <p class="project-desc" style="margin-top: 0.5rem; font-size: 0.95rem; font-weight: 500;">
-                            Full-stack real-time order tracking and staff coordination platform.
-                        </p>
+                    </div>
 
-                        <ul class="project-features">
-                            <li>Role-based access control (RBAC)</li>
-                            <li>Real-time updates via Socket.io</li>
-                            <li>Secure JWT Authentication</li>
-                            <li>Analytics & Admin Dashboard</li>
-                            <li>Optimized MongoDB queries, improving data fetch performance by 40%+.</li>
-                        </ul>
-
-                        <div class="project-links">
-                            <a href="#"
-                                style="color: var(--accent); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                    <polyline points="15 3 21 3 21 9" />
-                                    <line x1="10" y1="14" x2="21" y2="3" />
-                                </svg>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/abdulrazzaq27/restaurant-management-system" target="_blank"
-                                class="source-code-link"
-                                style="font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                                </svg>
-                                Source Code
-                            </a>
+                    <!-- Project 3: Gym Management -->
+                    <div class="project-card glass-panel">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <div class="project-meta">
+                                    <span class="project-tag">Management</span>
+                                    <span class="project-tag">Full-Stack</span>
+                                </div>
+                                <div class="project-links-row">
+                                    <a href="https://github.com/abdulrazzaq27/gym" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                    <a href="https://gym-gamma-dusky.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Gym Management System</h3>
+                            <p class="project-desc">Automated member management, payments tracking, and admin analytics. Structured a modular codebase reducing future feature development time by 30%+.</p>
+                            <ul class="project-bullets">
+                                <li>Role-based admin &amp; staff access with secure JWT authentication and protected API endpoints</li>
+                                <li>Real-time membership renewal tracking, subscription payment logs, and automated member lifecycle management</li>
+                                <li>Comprehensive admin dashboard visualizing active members, revenue trends, and operational metrics</li>
+                                <li>Production deployment configured on Vercel with clean MVC structure and optimized database queries</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-badge">MERN</span><span class="tech-badge">JWT</span><span class="tech-badge">REST API</span><span class="tech-badge">Vercel</span>
+                            </div>
                         </div>
                     </div>
 
-                    
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Education</div>
+                    <h2 class="section-title">Academic <span class="gradient-text">Background</span></h2>
+                </div>
+                <div class="education-timeline">
+
+                    <div class="edu-item glass-panel">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-body">
+                            <div class="edu-period">2023 - 2027</div>
+                            <h3 class="edu-degree">B.E. Computer Science</h3>
+                            <p class="edu-school">Muffakham Jah College of Engineering &amp; Technology</p>
+                            <div class="edu-score"><i class="fas fa-star"></i> CGPA: 8.1</div>
+                        </div>
+                    </div>
+
+                    <div class="edu-item glass-panel">
+                        <div class="edu-icon"><i class="fas fa-school"></i></div>
+                        <div class="edu-body">
+                            <div class="edu-period">2021 - 2023</div>
+                            <h3 class="edu-degree">Intermediate (MPC)</h3>
+                            <p class="edu-school">MS Junior College</p>
+                            <div class="edu-score"><i class="fas fa-star"></i> 90%</div>
+                        </div>
+                    </div>
+
+                    <div class="edu-item glass-panel">
+                        <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="edu-body">
+                            <div class="edu-period">2011 - 2021</div>
+                            <h3 class="edu-degree">Secondary School</h3>
+                            <p class="edu-school">Vikas High School</p>
+                            <div class="edu-score"><i class="fas fa-star"></i> GPA: 10.0</div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education" style="padding: 50px 0;">
+        <!-- CONTACT -->
+        <section id="contact" class="section">
             <div class="container">
-                <div class="glass-card">
-                    <h2 class="section-title">Education</h2>
-                    <div style="max-width: 800px;">
-
-                        <div class="timeline-item">
-                            <h4 style="font-size: 1.2rem;">Muffakham Jah College of Engineering & Technology</h4>
-                            <p style="color: var(--accent);">B.Tech in Computer Science Engineering</p>
-                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">2023 - 2027 |
-                                CGPA: 8.38</p>
+                <div class="contact-wrap glass-panel">
+                    <div class="contact-left">
+                        <div class="section-tag">Let's Connect</div>
+                        <h2 class="section-title" style="margin-bottom:1rem;">Let's build something <span class="gradient-text">remarkable together.</span></h2>
+                        <p class="contact-intro">I help startups and businesses build reliable web applications, dashboards, and admin systems. If you're looking for a developer who takes ownership and delivers production-ready solutions, let's talk.</p>
+                        <div class="contact-capabilities">
+                            <div class="capability-item"><i class="fas fa-check-circle"></i> Admin dashboards &amp; internal tools</div>
+                            <div class="capability-item"><i class="fas fa-check-circle"></i> Business automation &amp; bot integrations</div>
+                            <div class="capability-item"><i class="fas fa-check-circle"></i> Secure REST APIs &amp; backend architecture</div>
+                            <div class="capability-item"><i class="fas fa-check-circle"></i> AI-powered pipelines &amp; data systems</div>
                         </div>
-
-                        <div class="timeline-item">
-                            <h4 style="font-size: 1.2rem;">MS Junior College</h4>
-                            <p style="color: var(--text-muted);">MPC</p>
-                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">2021 - 2023 |
-                                Grade: 90%</p>
-                        </div>
-
-                        <div class="timeline-item">
-                            <h4 style="font-size: 1.2rem;">Vikas High School</h4>
-                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">2011 - 2021 |
-                                GPA: 10.0</p>
-                        </div>
-
+                    </div>
+                    <div class="contact-right">
+                        <a href="mailto:arrazzaq7860@gmail.com" class="contact-card">
+                            <div class="contact-card-icon" style="background:rgba(200,169,110,0.15)"><i class="fas fa-envelope" style="color:#c8a96e"></i></div>
+                            <div><div class="contact-card-label">Email</div><div class="contact-card-value">arrazzaq7860@gmail.com</div></div>
+                            <i class="fas fa-arrow-right contact-card-arrow"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abdulrazzaq27" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-card-icon" style="background:rgba(0,119,181,0.15)"><i class="fab fa-linkedin-in" style="color:#0077b5"></i></div>
+                            <div><div class="contact-card-label">LinkedIn</div><div class="contact-card-value">linkedin.com/in/abdulrazzaq27</div></div>
+                            <i class="fas fa-arrow-right contact-card-arrow"></i>
+                        </a>
+                        <a href="https://github.com/abdulrazzaq27" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-card-icon" style="background:rgba(128,128,128,0.12)"><i class="fab fa-github" style="color: var(--text-primary);"></i></div>
+                            <div><div class="contact-card-label">GitHub</div><div class="contact-card-value">github.com/abdulrazzaq27</div></div>
+                            <i class="fas fa-arrow-right contact-card-arrow"></i>
+                        </a>
+                        <!-- <a href="tel:+918328307368" class="contact-card">
+                            <div class="contact-card-icon" style="background:rgba(200,169,110,0.15)"><i class="fas fa-phone" style="color:#c8a96e"></i></div>
+                            <div><div class="contact-card-label">Phone</div><div class="contact-card-value">+91 83283 07368</div></div>
+                            <i class="fas fa-arrow-right contact-card-arrow"></i>
+                        </a> -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" style="padding: 100px 0;">
-            <div class="container" style="text-align: center;">
-                <h2 style="font-size: 3rem; margin-bottom: 1rem;">Let's Work Together</h2>
-                <div style="max-width: 600px; margin: 0 auto 3rem; text-align: left; background: rgba(255,255,255,0.03); padding: 2rem; border-radius: 16px; border: 1px solid var(--border-card);">
-                    <p style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">
-                        I help startups and small businesses build reliable web applications, dashboards, and admin
-                        systems. If you’re looking for a developer who can take ownership and deliver production-ready
-                        solutions, let’s talk.
-                    </p>
-                    <h4 style="color: var(--accent); margin-bottom: 1rem;">What I Can Help You With:</h4>
-                    <ul style="color: var(--text-muted); list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="color: var(--accent);">▹</span> Admin dashboards & internal tools
-                        </li>
-                        <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="color: var(--accent);">▹</span> Business automation systems
-                        </li>
-                        <li style="display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="color: var(--accent);">▹</span> Secure REST APIs & backend architecture
-                        </li>
-                    </ul>
-                </div>
+    </main>
 
-                <div class="contact-grid" style="max-width: 800px; margin: 0 auto;">
-                    <a href="mailto:EMAIL" class="contact-item">
-                        <div style="background: rgba(255,255,255,0.1); padding: 0.8rem; border-radius: 50%;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                <polyline points="22,6 12,13 2,6" />
-                            </svg>
-                        </div>
-                        <div style="text-align: left;">
-                            <div style="font-size: 0.85rem; color: var(--text-muted);">Email</div>
-                            <div style="font-weight: 600;">Get in Touch</div>
-                        </div>
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-logo">Abdul<span>Razzaq</span></span>
+                <p class="footer-copy">&copy; 2025 Abdul Razzaq. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/abdulrazzaq27" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abdulrazzaq27" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://leetcode.com/u/abdulrazzaq27/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" title="LeetCode Profile">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.818 3.535 5.922 5.922 0 0 0 3.327-.552 6.002 6.002 0 0 0 2.215-2.029l3.528-4.498a1.385 1.385 0 0 0-.25-1.947 1.385 1.385 0 0 0-1.947.25l-3.528 4.498a3.226 3.226 0 0 1-1.19 1.09 3.184 3.184 0 0 1-1.789.297 3.2 3.2 0 0 1-2.59-1.904 3.16 3.16 0 0 1-.188-.547 2.978 2.978 0 0 1-.033-1.27 2.87 2.87 0 0 1 .65-1.132l3.854-4.126 4.444-4.825a1.385 1.385 0 0 0-.961-2.338zm3.016 9.421a1.385 1.385 0 0 0-1.385 1.385v5.54a1.385 1.385 0 1 0 2.77 0v-5.54a1.385 1.385 0 0 0-1.385-1.385z"/></svg>
                     </a>
-
-                    <a href="https://www.linkedin.com/in/abdulrazzaq27" target="_blank" class="contact-item">
-                        <div style="background: #0077b5; padding: 0.8rem; border-radius: 50%; color: white;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                            </svg>
-                        </div>
-                        <div style="text-align: left;">
-                            <div style="font-size: 0.85rem; color: var(--text-muted);">LinkedIn</div>
-                            <div style="font-weight: 600;">Connect</div>
-                        </div>
-                    </a>
-
-                    <a href="https://www.github.com/abdulrazzaq27" target="_blank" class="contact-item">
-                        <div style="background: #333; padding: 0.8rem; border-radius: 50%; color: white;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </div>
-                        <div style="text-align: left;">
-                            <div style="font-size: 0.85rem; color: var(--text-muted);">GitHub</div>
-                            <div style="font-weight: 600;">Follow</div>
-                        </div>
-                    </a>
+                    <a href="mailto:arrazzaq7860@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
-        </section>
+        </div>
+    </footer>
 
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <p>&copy; 2025 Abdul Razzaq. All rights reserved.</p>
-            </div>
-        </footer>
-        <script>
-            // Use class-based toggling for cleaner styles
-            const mobileBtn = document.querySelector('.mobile-menu-btn');
-            const navLinks = document.querySelector('.nav-links');
-
-            if (mobileBtn && navLinks) {
-                mobileBtn.addEventListener('click', () => {
-                    navLinks.classList.toggle('mobile-active');
-
-                    // Toggle aria-expanded for accessibility
-                    const isExpanded = navLinks.classList.contains('mobile-active');
-                    mobileBtn.setAttribute('aria-expanded', isExpanded);
-                });
-
-                // Close menu when clicking a link
-                navLinks.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        navLinks.classList.remove('mobile-active');
-                        mobileBtn.setAttribute('aria-expanded', 'false');
-                    });
-                });
-            }
-
-            // Scroll Spy / Active Link Highlighting
-            const sections = document.querySelectorAll('section');
-            const navItems = document.querySelectorAll('.nav-links a');
-
-            const onScroll = () => {
-                const scrollPos = window.scrollY + 100; // Offset for navbar height
-
-                sections.forEach(section => {
-                    const top = section.offsetTop;
-                    const height = section.offsetHeight;
-                    const id = section.getAttribute('id');
-
-                    if (scrollPos >= top && scrollPos < top + height) {
-                        navItems.forEach(link => {
-                            link.classList.remove('active');
-                            if (link.getAttribute('href') === `#${id}`) {
-                                link.classList.add('active');
-                            }
-                        });
-                    }
-                });
-            };
-
-            window.addEventListener('scroll', onScroll);
-            // Initial check
-            onScroll();
-
-            // Theme Toggle Logic
-            const themeToggle = document.getElementById('theme-toggle');
-            const htmlElement = document.documentElement;
-            // const icon = themeToggle.querySelector('i'); // Icon stays constant
-
-            // Check for saved user preference
-            const savedTheme = localStorage.getItem('theme');
-            // DEFAULT TO LIGHT MODE: Only switch to dark if explicitly saved as 'dark'
-            if (savedTheme === 'dark') {
-                htmlElement.removeAttribute('data-theme');
-            } else {
-                htmlElement.setAttribute('data-theme', 'light');
-            }
-
-            themeToggle.addEventListener('click', () => {
-                const currentTheme = htmlElement.getAttribute('data-theme');
-                if (currentTheme === 'light') {
-                    htmlElement.removeAttribute('data-theme');
-                    localStorage.setItem('theme', 'dark');
-                } else {
-                    htmlElement.setAttribute('data-theme', 'light');
-                    localStorage.setItem('theme', 'light');
-                }
-            });
-        </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
